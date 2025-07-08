@@ -5,11 +5,12 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.personservice.controller;
+package com.me.practise.otel.controller;
 
-import com.me.learning.consul.personservice.dto.PersonRequest;
-import com.me.learning.consul.personservice.dto.PersonResponse;
-import com.me.learning.consul.personservice.service.PersonService;
+
+import com.me.practise.otel.dto.PersonRequest;
+import com.me.practise.otel.dto.PersonResponse;
+import com.me.practise.otel.service.PersonService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

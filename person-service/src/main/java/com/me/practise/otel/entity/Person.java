@@ -5,16 +5,18 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.personservice.dto;
+package com.me.practise.otel.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonResponse {
+public class Person implements Serializable {
 
     private Long personId;
     private String firstName;

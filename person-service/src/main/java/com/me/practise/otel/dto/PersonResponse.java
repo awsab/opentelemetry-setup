@@ -5,13 +5,18 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.personservice.dto;
+package com.me.practise.otel.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class PersonRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class PersonResponse {
 
+    private Long personId;
     private String firstName;
     private String lastName;
     private String email;

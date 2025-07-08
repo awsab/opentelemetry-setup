@@ -5,11 +5,12 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.personservice.service;
+package com.me.practise.otel.service;
 
-import com.me.learning.consul.personservice.dto.PersonRequest;
-import com.me.learning.consul.personservice.dto.PersonResponse;
-import com.me.learning.consul.personservice.entity.Person;
+
+import com.me.practise.otel.dto.PersonRequest;
+import com.me.practise.otel.dto.PersonResponse;
+import com.me.practise.otel.entity.Person;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

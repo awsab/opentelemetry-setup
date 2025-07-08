@@ -8,7 +8,7 @@
         <version>3.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.me.learning.consul</groupId>
+    <groupId>org.me.practise.otel</groupId>
     <artifactId>person-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>person-service</name>

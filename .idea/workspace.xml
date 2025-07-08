@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32903af9-405a-4ffe-b951-ebc825fdea41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/com/me/learning/consul/otelvictoriaspringboot/OtelVictoriaSpringBootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/PersonServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/PersonServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/dto/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/dto/PersonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/dto/PersonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/dto/PersonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/personservice/PersonServiceApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +47,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.OtelVictoriaSpringBootApplication (1).executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
@@ -45,13 +59,65 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.compose.yml: Compose Deployment">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Ramu\GitHub_Repo\opentelemetry-setup\person-service\src\main\java\com\me\practise\otel" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PersonServiceApplication (1)">
+    <configuration name="OtelVictoriaSpringBootApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="otel-victoria-spring-boot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.me.practise.otel.OtelVictoriaSpringBootApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.me.practise.otel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OtelVictoriaSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="otel-victoria-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.me.learning.consul.otelvictoriaspringboot.OtelVictoriaSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="person-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.me.practise.otel.PersonServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.practise.otel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="person-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.me.learning.consul.personservice.PersonServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,6 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PersonServiceApplication (1)" />
+        <item itemvalue="Spring Boot.OtelVictoriaSpringBootApplication (1)" />
         <item itemvalue="Docker.compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -89,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751997941810</updated>
-      <workItem from="1751997945515" duration="745000" />
+      <workItem from="1751997945515" duration="1326000" />
     </task>
     <servers />
   </component>

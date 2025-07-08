@@ -1,13 +1,11 @@
-package com.me.learning.consul.otelvictoriaspringboot;
+package com.me.practise.otel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OtelVictoriaSpringBootApplication {
-
+public class PersonServiceApplication {
     public static void main (String[] args) {
-        SpringApplication.run (OtelVictoriaSpringBootApplication.class, args);
+        SpringApplication.run (PersonServiceApplication.class, args);
     }
-
 }
