@@ -1,0 +1,42 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+  filelog:
+    include: [ /logs/application.json ]
+    start_at: beginning
+
+processors:
+  batch:
+
+exporters:
+  otlphttp/victoriametrics:
+    compression: gzip
+    encoding: proto
+    metrics_endpoint: http://victoriametrics:8428/opentelemetry/v1/metrics
+    logs_endpoint: http://victoria-logs:8889/insert/opentelemetry/v1/logs
+    traces_endpoint: http://victoriametrics:8428/opentelemetry/v1/traces
+    tls:
+      insecure: true
+#  debug:
+#    verbosity: detailed
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlphttp/victoriametrics]
+
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlphttp/victoriametrics]
+
+    logs:
+      receivers: [otlp, filelog]
+      processors: [batch]
+      exporters: [otlphttp/victoriametrics]
