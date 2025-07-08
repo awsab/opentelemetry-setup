@@ -1,0 +1,167 @@
+spring:
+  application:
+    name: otel-victoria-spring-boot
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  docker:
+    compose:
+      lifecycle-management: start_and_stop
+      startup:
+        enabled: true
+        wait-for:
+          - victoriametrics:8428
+          - victorialogs:8889
+          - jaeger:16686
+      readiness:
+        timeout: 60s
+
+# OpenTelemetry Configuration
+otel:
+  resource:
+    attributes:
+        service.name: ${spring.application.name}
+        service.version: 1.0.0
+
+  exporter:
+    otlp:
+      endpoint: http://localhost:4317
+      protocol: grpc
+      compression: gzip
+      timeout: 10s
+
+  metrics:
+    exporter: otlp
+
+  logs:
+    exporter: otlp
+
+  instrumentation:
+    spring-webmvc:
+        enabled: true
+    jdbc:
+        enabled: true
+
+  sdk:
+    disabled: false
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,trace
+  endpoint:
+    health:
+      show-details: always
+
+  otlp:
+    tracing:
+      endpoint: http://localhost:4317
+  tracing:
+    enabled: true
+    sampling:
+      probability: 0.1
+
+  metrics:
+    export:
+      otlp:
+        enabled: true
+        endpoint: http://otel-collector:4318/v1/metrics
+
+  # Resilience4j Configuration
+resilience4j:
+  retry:
+    instances:
+        default:
+            max-attempts: 3
+            wait-duration: 1000ms
+            retry-exceptions:
+            - java.io.IOException
+            - java.net.SocketTimeoutException
+            ignore-exceptions:
+              - java.lang.IllegalArgumentException
+            exponential-backoff-multiplier: 2
+            randomized-wait-factor: 0.5
+
+  rate-limiter:
+    instances:
+        default:
+            limit-for-period: 10
+            limit-refresh-period: 1s
+            timeout-duration: 3s
+
+  bulkhead:
+    instances:
+        default:
+            max-concurrent-calls: 10
+            max-wait-duration: 1s
+
+  circuitbreaker:
+    instances:
+        default:
+            failure-rate-threshold: 50
+            slow-call-rate-threshold: 50
+            slow-call-duration-threshold: 2s
+            minimum-number-of-calls: 5
+            sliding-window-size: 10
+            wait-duration-in-open-state: 30s
+            permitted-number-of-calls-in-half-open-state: 5
+            automatic-transition-from-open-to-half-open-enabled: true
+
+  timelimiter:
+    instances:
+        default:
+            timeout-duration: 5s
+            cancel-running-future: true
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    io.opentelemetry: INFO
+    io.opentelemetry.sdk: INFO
+    io.opentelemetry.exporter.otlp: INFO
+    org.me.practise: DEBUG
+    org.hibernate.SQL: DEBUG
+    og.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    io.github.resilience4j: DEBUG
+    net.javacrumbs.shedlock: DEBUG
+    org.springframework.boot.docker.compose: DEBUG
+
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+
+# Sever  Configuration
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+
+
+# Custom  Properties
+app:
+  tracing:
+    enabled: true
+    custom-attribute: "development"
