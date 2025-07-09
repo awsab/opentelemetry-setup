@@ -14,13 +14,14 @@ import com.me.practise.otel.entity.Person;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @Slf4j
 public class PersonService {
 
-    private static final List<Person> personList = List.of (
+    private static final List<Person> personList = new ArrayList<> (List.of (
             new Person (1L, "John", "Doe", "john.doe@doe.com", "1234567890", "123 Main St", "New York", "USA", 25),
             new Person (2L, "Jane", "Smith", "jane.smith@email.com", "2345678901", "456 Oak Ave", "Los Angeles", "USA", 30),
             new Person (3L, "Alice", "Johnson", "alice.johnson@email.com", "3456789012", "789 Pine Rd", "Chicago", "USA", 28),
@@ -31,7 +32,7 @@ public class PersonService {
             new Person (8L, "Fiona", "Garcia", "fiona.garcia@email.com", "8901234567", "753 Willow Ave", "San Diego", "USA", 29),
             new Person (9L, "George", "Martinez", "george.martinez@email.com", "9012345678", "852 Aspen Rd", "Dallas", "USA", 33),
             new Person (10L, "Hannah", "Lopez", "hannah.lopez@email.com", "0123456789", "951 Elm St", "San Jose", "USA", 26)
-    );
+    ));
 
 
     public PersonResponse getPersonByPersonId (Long personId) {

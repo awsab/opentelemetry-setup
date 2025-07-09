@@ -4,6 +4,7 @@
     <option name="yamlToUserMarkings">
       <map>
         <entry key="$PROJECT_DIR$/otel-collector-config.yaml" value="true" />
+        <entry key="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.yml" value="true" />
       </map>
     </option>
   </component>

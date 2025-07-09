@@ -5,64 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32903af9-405a-4ffe-b951-ebc825fdea41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/cleints/feign/PersonServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/cleints/request/PersonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fastRequest/config/fastRequestCurrentProjectConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/.fastRequest/config/fastRequestCurrentProjectConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CIAidSettingsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CIAidSettingsState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentProjectLocalConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentProjectLocalConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/com/me/learning/consul/otelvictoriaspringboot/OtelVictoriaSpringBootApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/PersonServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/PersonServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/dto/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/dto/PersonRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/dto/PersonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/dto/PersonResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/consul/personservice/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/learning/personservice/PersonServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/OtelVictoriaSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/OtelVictoriaSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/TracingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/TracingInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/scheduler/UserScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/scheduler/UserScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/service/CustomUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/service/CustomUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2zbRlrT03he6R3tkGXPuBnSUIxP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.compose.yml: Compose Deployment.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.OtelVictoriaSpringBootApplication (1).executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.OtelVictoriaSpringBootApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PersonServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Ramu\GitHub_Repo\opentelemetry-setup\person-service\src\main\java\com\me\practise\otel" />
@@ -78,7 +94,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PersonServiceApplication (1)">
+  <component name="RunManager" selected="Spring Boot.OtelVictoriaSpringBootApplication (1)">
     <configuration name="OtelVictoriaSpringBootApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="otel-victoria-spring-boot" />
@@ -123,7 +139,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -136,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PersonServiceApplication (1)" />
         <item itemvalue="Spring Boot.OtelVictoriaSpringBootApplication (1)" />
+        <item itemvalue="Spring Boot.PersonServiceApplication (1)" />
         <item itemvalue="Docker.compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -157,7 +175,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751997941810</updated>
-      <workItem from="1751997945515" duration="1326000" />
+      <workItem from="1751997945515" duration="1509000" />
+      <workItem from="1752036467220" duration="9977000" />
     </task>
     <servers />
   </component>

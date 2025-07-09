@@ -165,3 +165,7 @@ app:
   tracing:
     enabled: true
     custom-attribute: "development"
+
+person:
+  service:
+    url: http://localhost:8090/api

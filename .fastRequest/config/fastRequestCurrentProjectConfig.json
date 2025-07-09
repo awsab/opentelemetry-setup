@@ -4,15 +4,39 @@
 		"domain":"https://api.apifox.com",
 		"syncAfterSave":false
 	},
-	"dataList":[],
-	"envList":[],
+	"dataList":[
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8080/api"
+				}
+			],
+			"name":"otel-victoria-spring-boot"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8090/api"
+				}
+			],
+			"name":"person-service"
+		}
+	],
+	"envList":[
+		"local"
+	],
 	"headerList":[],
 	"ignoreParseFieldList":[],
 	"maxDescriptionLength":-1,
 	"pmCollectionId":"",
 	"postScript":"",
 	"preScript":"",
-	"projectList":[],
+	"projectList":[
+		"otel-victoria-spring-boot",
+		"person-service"
+	],
 	"syncModel":{
 		"branch":"master",
 		"domain":"https://github.com",
