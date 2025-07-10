@@ -25,6 +25,84 @@
             </ParamGroupCollection>
           </option>
           <option name="requestInfo" value="Request Url: http://localhost:8080/api/api/users/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:1,&quot;name&quot;:&quot;name_ihgn0&quot;,&quot;email&quot;:&quot;email_2n4x4@gmail.com&quot;,&quot;address&quot;:&quot;address_11lfb&quot;,&quot;phone&quot;:&quot;phone_ap1sj&quot;,&quot;createdAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;,&quot;updatedAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;}" />
+          <option name="url" value="/api/users/{id}" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.otel.controller.UserController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="otel-victoria-spring-boot" />
+          <option name="method" value="getUserById" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.otel.controller.UserController" />
+              <option name="method" value="getUserById" />
+              <option name="methodDescription" value="getUserById" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/users/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;name&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;phone&quot;:&quot;No comment,Type =String&quot;,&quot;createdAt&quot;:&quot;No comment,Type =String&quot;,&quot;updatedAt&quot;:&quot;No comment,Type =String&quot;}}" />
+              <option name="url" value="/api/users/{id}" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/api/users/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:1,&quot;name&quot;:&quot;name_ihgn0&quot;,&quot;email&quot;:&quot;email_2n4x4@gmail.com&quot;,&quot;address&quot;:&quot;address_11lfb&quot;,&quot;phone&quot;:&quot;phone_ap1sj&quot;,&quot;createdAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;,&quot;updatedAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;}" />
+          <option name="url" value="/api/users/{id}" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.otel.controller.UserController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="otel-victoria-spring-boot" />
+          <option name="method" value="createUser" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;name&quot;: &quot;name_ihgn0&quot;,&#10;  &quot;email&quot;: &quot;email_2n4x4@gmail.com&quot;,&#10;  &quot;address&quot;: &quot;address_11lfb&quot;,&#10;  &quot;phone&quot;: &quot;phone_ap1sj&quot;&#10;}" />
+              <option name="className" value="org.me.practise.otel.controller.UserController" />
+              <option name="jsonDocument" value="{&#10;  &quot;name&quot;: &quot;No comment,Value =name_ihgn0&quot;,&#10;  &quot;email&quot;: &quot;No comment,Value =email_2n4x4&quot;,&#10;  &quot;address&quot;: &quot;No comment,Value =address_11lfb&quot;,&#10;  &quot;phone&quot;: &quot;No comment,Value =phone_ap1sj&quot;&#10;}" />
+              <option name="method" value="createUser" />
+              <option name="methodDescription" value="createUser" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/users" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;name&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;phone&quot;:&quot;No comment,Type =String&quot;,&quot;createdAt&quot;:&quot;No comment,Type =String&quot;,&quot;updatedAt&quot;:&quot;No comment,Type =String&quot;}}" />
+              <option name="url" value="/api/users" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/api/users&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 101&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;address&quot;:&quot;address_11lfb&quot;,&quot;phone&quot;:&quot;phone_ap1sj&quot;,&quot;name&quot;:&quot;name_ihgn0&quot;,&quot;email&quot;:&quot;email_2n4x4@gmail.com&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:1,&quot;name&quot;:&quot;name_ihgn0&quot;,&quot;email&quot;:&quot;email_2n4x4@gmail.com&quot;,&quot;address&quot;:&quot;address_11lfb&quot;,&quot;phone&quot;:&quot;phone_ap1sj&quot;,&quot;createdAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;,&quot;updatedAt&quot;:&quot;2025-07-09T17:20:57.89067&quot;}" />
+          <option name="url" value="/api/users" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.otel.controller.UserController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="otel-victoria-spring-boot" />
+          <option name="method" value="getUserById" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.otel.controller.UserController" />
+              <option name="method" value="getUserById" />
+              <option name="methodDescription" value="getUserById" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/users/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;name&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;phone&quot;:&quot;No comment,Type =String&quot;,&quot;createdAt&quot;:&quot;No comment,Type =String&quot;,&quot;updatedAt&quot;:&quot;No comment,Type =String&quot;}}" />
+              <option name="url" value="/api/users/{id}" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/api/users/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
           <option name="response" value="{&quot;id&quot;:1,&quot;name&quot;:&quot;name_uitot&quot;,&quot;email&quot;:&quot;email_prufi@gmail.com&quot;,&quot;address&quot;:&quot;address_6yn69&quot;,&quot;phone&quot;:&quot;phone_rupxb&quot;,&quot;createdAt&quot;:&quot;2025-07-09T16:24:54.831208&quot;,&quot;updatedAt&quot;:&quot;2025-07-09T16:24:54.831208&quot;}" />
           <option name="url" value="/api/users/{id}" />
         </ResponseHistory>
