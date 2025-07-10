@@ -6,7 +6,7 @@ receivers:
       http:
         endpoint: 0.0.0.0:4318
   filelog:
-    include: [ /logs/application.json ]
+    #include: [ /logs/application.json ]
     start_at: beginning
 
 processors:

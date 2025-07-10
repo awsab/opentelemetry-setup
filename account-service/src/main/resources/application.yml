@@ -1,0 +1,91 @@
+spring:
+  application:
+    name: account-service
+
+# OpenTelemetry Configuration
+otel:
+  resource:
+    attributes:
+      service.name: ${spring.application.name}
+      service.version: 1.0.0
+
+  exporter:
+    otlp:
+      endpoint: http://localhost:4317
+      protocol: grpc
+      compression: gzip
+      timeout: 10s
+
+  metrics:
+    exporter: otlp
+
+  logs:
+    exporter: otlp
+
+  instrumentation:
+    spring-webmvc:
+      enabled: true
+    jdbc:
+      enabled: true
+
+  sdk:
+    disabled: false
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,trace
+  endpoint:
+    health:
+      show-details: always
+
+  otlp:
+    tracing:
+      endpoint: http://localhost:4317
+  tracing:
+    enabled: true
+    sampling:
+      probability: 0.1
+
+  metrics:
+    export:
+      otlp:
+        enabled: true
+        endpoint: http://otel-collector:4318/v1/metrics
+
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    io.opentelemetry: INFO
+    io.opentelemetry.sdk: INFO
+    io.opentelemetry.exporter.otlp: INFO
+    org.me.practise: DEBUG
+    org.hibernate.SQL: DEBUG
+    og.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    io.github.resilience4j: DEBUG
+    net.javacrumbs.shedlock: DEBUG
+    org.springframework.boot.docker.compose: DEBUG
+
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+
+# Sever  Configuration
+server:
+  port: 8091
+  servlet:
+    context-path: /api
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+
+
+# Custom Properties
+app:
+  tracing:
+    enabled: true
+    custom-attribute: "development"
