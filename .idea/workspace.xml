@@ -5,24 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32903af9-405a-4ffe-b951-ebc825fdea41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/me/practise/otel/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/me/practise/otel/dto/AccountRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/me/practise/otel/dto/AccountResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/me/practise/otel/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/me/practise/otel/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/FeignOtelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/client/PersonServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/config/FeignTracingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/controller/MDCInspectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/controller/ParentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/dto/ParentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/dto/ParentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/dto/PersonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/entity/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/filter/TracingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/service/ParentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-project/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/filter/TraceLoggingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fastRequest/config/fastRequestCurrentProjectConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/.fastRequest/config/fastRequestCurrentProjectConfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentParamGroup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentParamGroup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentProjectLocalConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fastRequest/fastRequestCurrentProjectLocalConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/fastRequest/fastRequestHistoryConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fastRequest/fastRequestHistoryConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.2025-07-08.0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/otel-collector-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-collector-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/logs/application.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/cleints/feign/PersonServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/cleints/feign/PersonServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/OpenTelemetryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/OpenTelemetryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/config/ShedLockConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/service/CustomUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/java/org/me/practise/otel/service/CustomUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/otel-victoria-spring-boot/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/java/com/me/practise/otel/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +75,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.compose.yml.otel-collector: Compose Deployment.executor": "Run",
     "Docker.compose.yml: Compose Deployment.executor": "Run",
+    "Maven.account-service [clean].executor": "Run",
+    "Maven.account-service [compile].executor": "Run",
+    "Maven.parent-project [clean].executor": "Run",
+    "Maven.person-service [clean].executor": "Run",
+    "Maven.person-service [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
     "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
@@ -66,30 +93,39 @@
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.AccountServiceApplication.executor": "Run",
     "Spring Boot.OtelVictoriaSpringBootApplication (1).executor": "Run",
+    "Spring Boot.OtelVictoriaSpringBootApplication.executor": "Run",
+    "Spring Boot.OtelVictoriaSpringBootApplication2.executor": "Run",
+    "Spring Boot.ParentProjectApplication.executor": "Run",
     "Spring Boot.PersonServiceApplication (1).executor": "Run",
+    "Spring Boot.PersonServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Ramu/GitHub_Repo/opentelemetry-setup/otel-victoria-spring-boot/src/main/resources",
+    "last_opened_file_path": "/Volumes/WD/Github-Projects/opentelemetry-setup/parent-project/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.41149426",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/parent-project/src/main/resources" />
       <recent name="C:\Ramu\GitHub_Repo\opentelemetry-setup\otel-victoria-spring-boot\src\main\resources" />
       <recent name="C:\Ramu\GitHub_Repo\opentelemetry-setup\account-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Ramu\GitHub_Repo\opentelemetry-setup\person-service\src\main\java\com\me\practise\otel" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.me.practise.parentproject.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,7 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.PersonServiceApplication (1)">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="account-service" />
@@ -111,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OtelVictoriaSpringBootApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="OtelVictoriaSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="otel-victoria-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.me.practise.otel.OtelVictoriaSpringBootApplication" />
@@ -125,9 +161,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OtelVictoriaSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="otel-victoria-spring-boot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.me.learning.consul.otelvictoriaspringboot.OtelVictoriaSpringBootApplication" />
+    <configuration name="ParentProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="parent-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.me.practise.parentproject.ParentProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,14 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="person-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.me.learning.consul.personservice.PersonServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -168,11 +197,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="compose.yml.otel-collector: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="otel-collector" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.compose.yml.otel-collector: Compose Deployment" />
+      <item itemvalue="Docker.compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.ParentProjectApplication" />
+      <item itemvalue="Spring Boot.AccountServiceApplication" />
+      <item itemvalue="Spring Boot.OtelVictoriaSpringBootApplication" />
+      <item itemvalue="Spring Boot.PersonServiceApplication (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OtelVictoriaSpringBootApplication (1)" />
         <item itemvalue="Spring Boot.PersonServiceApplication (1)" />
+        <item itemvalue="Spring Boot.OtelVictoriaSpringBootApplication" />
         <item itemvalue="Docker.compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.compose.yml.otel-collector: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -194,10 +245,23 @@
       <workItem from="1751997945515" duration="1509000" />
       <workItem from="1752036467220" duration="13490000" />
       <workItem from="1752123671035" duration="6595000" />
+      <workItem from="1752159691407" duration="11224000" />
+      <workItem from="1752239990234" duration="24780000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/parent-project/src/main/java/org/me/practise/parentproject/controller/MDCInspectController.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

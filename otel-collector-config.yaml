@@ -5,9 +5,9 @@ receivers:
         endpoint: 0.0.0.0:4317
       http:
         endpoint: 0.0.0.0:4318
-  filelog:
-    #include: [ /logs/application.json ]
-    start_at: beginning
+#  filelog:
+#    include: [ /logs/application.json ]
+#    start_at: beginning
 
 processors:
   batch:
@@ -37,6 +37,6 @@ service:
       exporters: [otlphttp/victoriametrics]
 
     logs:
-      receivers: [otlp, filelog]
+      receivers: [otlp]
       processors: [batch]
       exporters: [otlphttp/victoriametrics]

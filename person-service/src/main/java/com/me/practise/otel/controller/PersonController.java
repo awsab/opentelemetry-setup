@@ -12,6 +12,7 @@ import com.me.practise.otel.dto.PersonRequest;
 import com.me.practise.otel.dto.PersonResponse;
 import com.me.practise.otel.service.PersonService;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.MDC;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping ("/person")
 @Slf4j
+
 public class PersonController {
 
     private final PersonService personService;
@@ -30,6 +32,8 @@ public class PersonController {
 
     @GetMapping ("/{personId}")
     public ResponseEntity<PersonResponse> getPersonByPersonId(@PathVariable Long personId){
+        System.out.println("trace_id: " + MDC.get("trace_id"));
+        System.out.println("span_id: " + MDC.get("span_id"));
         log.info ("Fetching person with ID: {}", personId);
         return ResponseEntity.ok (personService.getPersonByPersonId (personId));
     }

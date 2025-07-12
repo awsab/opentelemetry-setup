@@ -8,11 +8,12 @@
 package org.me.practise.otel.cleints.feign;
 
 import org.me.practise.otel.cleints.request.PersonResponse;
+import org.me.practise.otel.config.FeignOtelConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient (name = "person-service", url = "${person.service.url}")
+@FeignClient (name = "person-service", url = "${person.service.url}", configuration = FeignOtelConfig.class)
 public interface PersonServiceClient {
 
     @GetMapping("/person/{personId}")

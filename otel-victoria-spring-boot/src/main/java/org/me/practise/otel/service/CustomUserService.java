@@ -1,9 +1,6 @@
 package org.me.practise.otel.service;
 
-import io.github.resilience4j.bulkhead.annotation.Bulkhead;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
-import io.github.resilience4j.retry.annotation.Retry;
-import io.micrometer.core.annotation.Timed;
+import io.opentelemetry.instrumentation.annotations.WithSpan;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.me.practise.otel.cleints.feign.PersonServiceClient;
@@ -32,10 +29,10 @@ public class CustomUserService {
     private final UserMapper userMapper;
     private final PersonServiceClient personServiceClient;
 
-    @Timed (value = "user.service.create", description = "Time taken to create user")
-    @Retry (name = "userService", fallbackMethod = "createUserFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.create", description = "Time taken to create user")
+//    @Retry (name = "userService", fallbackMethod = "createUserFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional
     public UserDto createUser (UserCreateDto userCreateDto) {
         log.info ("Creating user with email: {}", userCreateDto.getEmail ());
@@ -55,11 +52,12 @@ public class CustomUserService {
         }
     }
 
-    @Timed (value = "user.service.getById", description = "Time taken to get user by ID")
-    @Retry (name = "userService", fallbackMethod = "getUserByIdFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.getById", description = "Time taken to get user by ID")
+//    @Retry (name = "userService", fallbackMethod = "getUserByIdFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional (readOnly = true)
+    @WithSpan
     public UserDto getUserById (Long id) {
         log.info ("Fetching user with ID: {}", id);
 
@@ -72,10 +70,10 @@ public class CustomUserService {
         return userMapper.toDto (user);
     }
 
-    @Timed (value = "user.service.getAll", description = "Time taken to get all users")
-    @Retry (name = "userService", fallbackMethod = "getAllUsersFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.getAll", description = "Time taken to get all users")
+//    @Retry (name = "userService", fallbackMethod = "getAllUsersFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional (readOnly = true)
     public List<UserDto> getAllUsers () {
         log.info ("Fetching all users");
@@ -88,10 +86,10 @@ public class CustomUserService {
                 .collect (Collectors.toList ());
     }
 
-    @Timed (value = "user.service.update", description = "Time taken to update user")
-    @Retry (name = "userService", fallbackMethod = "updateUserFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.update", description = "Time taken to update user")
+//    @Retry (name = "userService", fallbackMethod = "updateUserFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional
     public UserDto updateUser (Long id, UserUpdateDto userUpdateDto) {
         log.info ("Updating user with ID: {}", id);
@@ -112,10 +110,10 @@ public class CustomUserService {
         return userMapper.toDto (updatedUser);
     }
 
-    @Timed (value = "user.service.delete", description = "Time taken to delete user")
-    @Retry (name = "userService", fallbackMethod = "deleteUserFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.delete", description = "Time taken to delete user")
+//    @Retry (name = "userService", fallbackMethod = "deleteUserFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional
     public void deleteUser (Long id) {
         log.info ("Deleting user with ID: {}", id);
@@ -128,10 +126,10 @@ public class CustomUserService {
         log.info ("User deleted successfully with ID: {}", id);
     }
 
-    @Timed (value = "user.service.searchByName", description = "Time taken to search users by name")
-    @Retry (name = "userService", fallbackMethod = "searchUsersByNameFallback")
-    @RateLimiter (name = "userService")
-    @Bulkhead (name = "userService")
+//    @Timed (value = "user.service.searchByName", description = "Time taken to search users by name")
+//    @Retry (name = "userService", fallbackMethod = "searchUsersByNameFallback")
+//    @RateLimiter (name = "userService")
+//    @Bulkhead (name = "userService")
     @Transactional (readOnly = true)
     public List<UserDto> searchUsersByName (String name) {
         log.info ("Searching users by name: {}", name);

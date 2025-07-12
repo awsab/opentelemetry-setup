@@ -22,6 +22,24 @@
 				}
 			],
 			"name":"person-service"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8091/api"
+				}
+			],
+			"name":"account-service"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8093/api"
+				}
+			],
+			"name":"parent-project"
 		}
 	],
 	"envList":[
@@ -35,7 +53,9 @@
 	"preScript":"",
 	"projectList":[
 		"otel-victoria-spring-boot",
-		"person-service"
+		"person-service",
+		"account-service",
+		"parent-project"
 	],
 	"syncModel":{
 		"branch":"master",

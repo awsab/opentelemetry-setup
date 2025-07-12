@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="org.me.practise.otel.controller.UserController" />
-    <option name="filePath" value="" />
-    <option name="method" value="getUserById" />
-    <option name="module" value="otel-victoria-spring-boot" />
-    <option name="originUrl" value="/api/users/{id}" />
+    <option name="className" value="org.me.practise.parentproject.controller.ParentController" />
+    <option name="filePath" value="/.fastRequest/collections/Root/parent-project/ParentController~getParentById.rapi" />
+    <option name="method" value="getParentById" />
+    <option name="methodDescription" value="getParentById" />
+    <option name="module" value="parent-project" />
+    <option name="originUrl" value="/api/parent/{parentId}" />
     <option name="pathParamMap">
       <map>
-        <entry key="id">
+        <entry key="parentId">
           <value>
             <Object />
           </value>
@@ -24,7 +25,8 @@
         </entry>
       </map>
     </option>
-    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;name&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;phone&quot;:&quot;No comment,Type =String&quot;,&quot;createdAt&quot;:&quot;No comment,Type =String&quot;,&quot;updatedAt&quot;:&quot;No comment,Type =String&quot;}}" />
-    <option name="url" value="/api/users/1" />
+    <option name="returnDocument" value="{&quot;parentId&quot;:&quot;No comment,Type =Number&quot;,&quot;parentName&quot;:&quot;No comment,Type =String&quot;,&quot;parentDescription&quot;:&quot;No comment,Type =String&quot;,&quot;parentType&quot;:&quot;No comment,Type =String&quot;,&quot;parentStatus&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentVersion&quot;:&quot;No comment,Type =String&quot;}" />
+    <option name="tempId" value="" />
+    <option name="url" value="/mdc-inspect" />
   </component>
 </project>

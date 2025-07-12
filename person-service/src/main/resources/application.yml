@@ -59,16 +59,16 @@ management:
 
 logging:
   level:
-    org.springframework.web: DEBUG
-    io.opentelemetry: INFO
-    io.opentelemetry.sdk: INFO
-    io.opentelemetry.exporter.otlp: INFO
-    org.me.practise: DEBUG
-    org.hibernate.SQL: DEBUG
-    og.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    io.github.resilience4j: DEBUG
-    net.javacrumbs.shedlock: DEBUG
-    org.springframework.boot.docker.compose: DEBUG
+#    org.springframework.web: DEBUG
+#    io.opentelemetry: INFO
+#    io.opentelemetry.sdk: INFO
+#    io.opentelemetry.exporter.otlp: INFO
+    org.me.practise: INFO
+#    org.hibernate.SQL: DEBUG
+#    og.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#    io.github.resilience4j: DEBUG
+#    net.javacrumbs.shedlock: DEBUG
+#    org.springframework.boot.docker.compose: DEBUG
 
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"

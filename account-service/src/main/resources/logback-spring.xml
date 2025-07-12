@@ -58,8 +58,9 @@
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="FILE"/>
-        <appender-ref ref="JSON_FILE"/>
+<!--        <appender-ref ref="FILE"/>-->
+<!--        <appender-ref ref="JSON_FILE"/>-->
+        <appender-ref ref="OTEL"/>
     </root>
 
     <logger name="org.me.practise" level="DEBUG"/>
