@@ -32,8 +32,8 @@ public class PersonController {
 
     @GetMapping ("/{personId}")
     public ResponseEntity<PersonResponse> getPersonByPersonId(@PathVariable Long personId){
-        System.out.println("trace_id: " + MDC.get("trace_id"));
-        System.out.println("span_id: " + MDC.get("span_id"));
+        System.out.println("traceId: " + MDC.get("traceId"));
+        System.out.println("spanId: " + MDC.get("spanId"));
         log.info ("Fetching person with ID: {}", personId);
         return ResponseEntity.ok (personService.getPersonByPersonId (personId));
     }

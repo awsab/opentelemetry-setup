@@ -55,8 +55,8 @@ public class ParentService {
     public Parent getParentById(long parentId) {
 
         System.out.println("MDC contents ******: " + MDC.getCopyOfContextMap());
-        System.out.println("trace_id: " + MDC.get("trace_id"));
-        System.out.println("span_id: " + MDC.get("span_id"));
+        System.out.println("traceId: " + MDC.get("traceId"));
+        System.out.println("spanId: " + MDC.get("spanId"));
         // Simulating a call to an external service to fetch person details
         System.out.println (personServiceClient.getPersonByPersonId (1L));
 

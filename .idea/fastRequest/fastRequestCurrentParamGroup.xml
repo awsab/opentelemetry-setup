@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="org.me.practise.parentproject.controller.ParentController" />
-    <option name="filePath" value="/.fastRequest/collections/Root/parent-project/ParentController~getParentById.rapi" />
-    <option name="method" value="getParentById" />
-    <option name="methodDescription" value="getParentById" />
-    <option name="module" value="parent-project" />
-    <option name="originUrl" value="/api/parent/{parentId}" />
-    <option name="pathParamMap">
+    <option name="bodyParamMap">
       <map>
-        <entry key="parentId">
+        <entry key="parent">
           <value>
             <Object />
           </value>
         </entry>
       </map>
     </option>
+    <option name="className" value="org.me.practise.parentproject.controller.ParentController" />
+    <option name="filePath" value="/.fastRequest/collections/Root/parent-project/ParentController~createParent.rapi" />
+    <option name="method" value="createParent" />
+    <option name="methodDescription" value="createParent" />
+    <option name="methodType" value="POST" />
+    <option name="module" value="parent-project" />
+    <option name="originUrl" value="/api/parent" />
     <option name="responseParamMap">
       <map>
         <entry key="return">
@@ -25,7 +26,7 @@
         </entry>
       </map>
     </option>
-    <option name="returnDocument" value="{&quot;parentId&quot;:&quot;No comment,Type =Number&quot;,&quot;parentName&quot;:&quot;No comment,Type =String&quot;,&quot;parentDescription&quot;:&quot;No comment,Type =String&quot;,&quot;parentType&quot;:&quot;No comment,Type =String&quot;,&quot;parentStatus&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentVersion&quot;:&quot;No comment,Type =String&quot;}" />
+    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;parentId&quot;:&quot;No comment,Type =Number&quot;,&quot;parentName&quot;:&quot;No comment,Type =String&quot;,&quot;parentDescription&quot;:&quot;No comment,Type =String&quot;,&quot;parentType&quot;:&quot;No comment,Type =String&quot;,&quot;parentStatus&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentCreatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedBy&quot;:&quot;No comment,Type =String&quot;,&quot;parentUpdatedDate&quot;:&quot;No comment,Type =String&quot;,&quot;parentVersion&quot;:&quot;No comment,Type =String&quot;}}" />
     <option name="tempId" value="" />
     <option name="url" value="/mdc-inspect" />
   </component>

@@ -13,7 +13,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.UUID;
 
-//@Component
+@Component
 public class TracingFilter extends OncePerRequestFilter {
 
     @Override
@@ -38,5 +38,11 @@ public class TracingFilter extends OncePerRequestFilter {
             MDC.remove("spanId");
             MDC.remove("businessTraceId");
         }
+    }
+
+    @Override
+    public void destroy() {
+        // Cleanup if necessary
+        MDC.clear();
     }
 }
